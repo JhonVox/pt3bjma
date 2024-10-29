@@ -1,0 +1,235 @@
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Computadoras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background: linear-gradient(135deg, #00b4d8, #0077b6);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00f5d4;
+}
+
+/* Productos */
+#productos {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+#productos h2 {
+    margin-bottom: 30px;
+    color: #0077b6;
+    font-size: 2em;
+}
+
+/* Cuadrícula de productos */
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 10px;
+}
+
+.producto {
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #00b4d8;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.producto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.producto img {
+    max-width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.producto h3 {
+    font-size: 1.2em;
+    color: #0077b6;
+    margin: 10px 0;
+}
+
+.producto p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.producto p:last-of-type {
+    font-size: 1.1em;
+    color: #00b4d8;
+    font-weight: bold;
+}
+
+/* Pie de página */
+footer {
+    background: linear-gradient(135deg, #0077b6, #023e8a);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
+}
+
+footer h3 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Iconos de redes sociales con colores específicos */
+.social-media a img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.social-media a:hover img {
+    transform: scale(1.2);
+}
+
+/* Colores de cada icono de red social */
+.social-media a:nth-child(1) img { /* TikTok */
+    filter: brightness(0) saturate(100%) invert(13%) sepia(87%) saturate(4646%) hue-rotate(269deg) brightness(92%) contrast(103%);
+}
+
+.social-media a:nth-child(2) img { /* Instagram */
+    filter: brightness(0) saturate(100%) invert(44%) sepia(79%) saturate(4763%) hue-rotate(331deg) brightness(97%) contrast(106%);
+}
+
+.social-media a:nth-child(3) img { /* WhatsApp */
+    filter: brightness(0) saturate(100%) invert(41%) sepia(95%) saturate(1712%) hue-rotate(92deg) brightness(94%) contrast(94%);
+}
+
+.social-media a:nth-child(4) img { /* Facebook */
+    filter: brightness(0) saturate(100%) invert(27%) sepia(93%) saturate(7462%) hue-rotate(186deg) brightness(99%) contrast(98%);
+}
+
+</style>
+<body>
+    <!-- Encabezado con el menú -->
+    <header>
+        <h1>Tienda de Computadoras</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#ofertas">Ofertas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de productos -->
+    <section id="productos">
+        <h2>Nuestros Productos</h2>
+        <div class="productos-grid">
+            <div class="producto">
+                <img src="ruta_a_imagen.jpg" alt="Laptop">
+                <h3>Laptop Gamer</h3>
+                <p>Alta potencia con gráficos dedicados.</p>
+                <p>Precio: $1,200.00</p>
+            </div>
+            <div class="producto">
+                <img src="ruta_a_imagen.jpg" alt="Teclado Mecánico">
+                <h3>Teclado Mecánico</h3>
+                <p>Teclado mecánico RGB para gamers.</p>
+                <p>Precio: $100.00</p>
+            </div>
+            <div class="producto">
+                <img src="ruta_a_imagen.jpg" alt="Monitor 4K">
+                <h3>Monitor 4K</h3>
+                <p>Pantalla de alta definición 4K.</p>
+                <p>Precio: $500.00</p>
+            </div>
+            <div class="producto">
+                <img src="ruta_a_imagen.jpg" alt="Mouse Inalámbrico">
+                <h3>Mouse Inalámbrico</h3>
+                <p>Mouse ergonómico inalámbrico.</p>
+                <p>Precio: $50.00</p>
+            </div>
+            <div class="producto">
+                <img src="ruta_a_imagen.jpg" alt="Auriculares Gaming">
+                <h3>Auriculares Gaming</h3>
+                <p>Audio de alta calidad con micrófono.</p>
+                <p>Precio: $80.00</p>
+            </div>
+            <div class="producto">
+                <img src="ruta_a_imagen.jpg" alt="Tarjeta Gráfica">
+                <h3>Tarjeta Gráfica</h3>
+                <p>Gráficos potentes para juegos.</p>
+                <p>Precio: $700.00</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página con redes sociales -->
+    <footer>
+        <h3>Conéctate con nosotros</h3>
+        <div class="social-media">
+            <a href="https://www.tiktok.com" target="_blank"><img src="tiktok-icon.svg" alt="TikTok"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="instagram-icon.svg" alt="Instagram"></a>
+            <a href="https://wa.me/tu-numero" target="_blank"><img src="whatsapp-icon.svg" alt="WhatsApp"></a>
+            <a href="https://www.facebook.com" target="_blank"><img src="https://pngate.com/es/producto/facebook-logotipo-en-un-circulo-azul-2/" alt="Facebook"></a>
+        </div>
+    </footer>
+</body>
+</html>
+
+
